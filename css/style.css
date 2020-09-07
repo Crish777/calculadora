@@ -1,0 +1,89 @@
+html{
+    box-sizing: border-box;
+}
+*, *::before, *::after{
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+h1{
+    background-color: #f90;
+    border-radius: 70%;
+    color: aliceblue;
+    font-size: 7rem;
+    margin: 2rem auto;
+    text-align: center;
+    width: 70%;
+}
+#calculadora{
+    background-color: #996;
+    border: 1rem solid #000;
+    border-radius: 10%;
+    box-shadow: .5rem .5rem .5rem rgba(0,0,0,.7);
+    margin: 0 auto;
+    padding: 3rem;
+    width: 52%;
+}
+#calculadora #operaciones{
+    background-color: #ddd;
+    border: .3rem solid #000;
+    border-radius: 10%;
+    box-shadow: .5rem .5rem .5rem rgba(0,0,0, .7);
+    font-size: 3rem;
+    margin: 0 auto;
+    padding: 2rem;
+    text-align: right;
+    text-shadow: .5rem .5rem .5rem rgba(199, 108, 4, 0.7);
+    width: 100%;
+}
+
+#calculadora #teclas ul{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+}
+#calculadora #teclas ul li{
+    background-color: #fff;
+    border-radius: 10%;
+    box-shadow: .5rem .5rem .5rem #000;
+    cursor: pointer;
+    flex-basis: calc(23% - 1rem);
+    list-style-type: none;
+    margin: .5rem;
+    padding: 2rem;
+    text-align: center;
+}
+#calculadora #teclas ul li:hover{
+    background-color: #f90;
+}
+#calculadora #teclas ul li:active{
+    background-color: #f77;
+}
+#calculadora #teclas ul li.signo{
+    background-color: #f90;
+}
+#calculadora #teclas ul li.signo:hover{
+    background-color: #fff;
+}
+#calculadora #teclas ul li.active{
+    background-color: #f77;
+}
+#calculadora #borrar{
+    background-color: #000;
+    border-radius: 10%;
+    color: #fff;
+    cursor: pointer;
+    margin: 1rem auto;
+    padding: 1rem;
+    text-align: center;
+    width: 30%;
+}
+#calculadora #borrar:hover{
+    background-color: rgba(0,0,0, .7);
+}
+#calculadora #borrar:active{
+    background-color: #fff;
+    color: #000;
+}
